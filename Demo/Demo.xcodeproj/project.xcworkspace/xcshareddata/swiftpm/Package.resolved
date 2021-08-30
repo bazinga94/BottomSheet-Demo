@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BottomSheet",
+        "repositoryURL": "https://github.com/bazinga94/BottomSheet.git",
+        "state": {
+          "branch": null,
+          "revision": "1c5450e4dc72c17bd2fbe7bf02561aee9cf330be",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
