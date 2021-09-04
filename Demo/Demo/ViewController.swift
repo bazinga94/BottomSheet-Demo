@@ -26,13 +26,17 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func showChangeableBottomSheet(_ sender: Any) {
-		let storyBoard: UIStoryboard! = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyBoard.instantiateViewController(withIdentifier: "TableViewSheet") as! TableViewSampleViewController
+		let vc = UIViewController()
+		vc.view.backgroundColor = .green
 		let bottomSheet = BottomSheet.init(childViewController: vc, initialHeight: 300, maxHeight: 600)
 		present(bottomSheet, animated: true, completion: nil)
 	}
 
 	@IBAction func showTableViewBottomSheet(_ sender: Any) {
+		let storyBoard: UIStoryboard! = UIStoryboard(name: "Main", bundle: nil)
+		let vc = storyBoard.instantiateViewController(withIdentifier: "TableViewSheet") as! TableViewSampleViewController
+		let bottomSheet = BottomSheet.init(childViewController: vc, height: 500)
+		present(bottomSheet, animated: true, completion: nil)
 	}
 
 
