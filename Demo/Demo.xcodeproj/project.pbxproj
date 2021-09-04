@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4360E3F126DD185C0045249E /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 4360E3F026DD185C0045249E /* BottomSheet */; };
 		43702257265557600050EC77 /* FlexibleSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43702256265557600050EC77 /* FlexibleSampleViewController.swift */; };
 		4370225A2655577E0050EC77 /* TableViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437022592655577E0050EC77 /* TableViewSampleViewController.swift */; };
 		B25B7E1625F0ADDE00BA31C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B7E1525F0ADDE00BA31C1 /* AppDelegate.swift */; };
@@ -36,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4360E3F126DD185C0045249E /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +98,6 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				4360E3F026DD185C0045249E /* BottomSheet */,
 			);
 			productName = Demo;
 			productReference = B25B7E1225F0ADDE00BA31C1 /* Demo.app */;
@@ -131,7 +128,6 @@
 			);
 			mainGroup = B25B7E0925F0ADDE00BA31C1;
 			packageReferences = (
-				4360E3EF26DD185C0045249E /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = B25B7E1325F0ADDE00BA31C1 /* Products */;
 			projectDirPath = "";
@@ -364,25 +360,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4360E3EF26DD185C0045249E /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bazinga94/BottomSheet.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4360E3F026DD185C0045249E /* BottomSheet */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4360E3EF26DD185C0045249E /* XCRemoteSwiftPackageReference "BottomSheet" */;
-			productName = BottomSheet;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B25B7E0A25F0ADDE00BA31C1 /* Project object */;
 }
