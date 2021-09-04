@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h2V-Wr-kHQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h2V-Wr-kHQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,36 +18,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X24-NV-Oqb">
-                                <rect key="frame" x="156" y="510" width="102" height="30"/>
+                                <rect key="frame" x="156" y="198" width="102" height="30"/>
                                 <state key="normal" title="Flexible Height"/>
                                 <connections>
                                     <action selector="showFlexibleBottomSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ldd-6b-c4E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-GL-j40">
-                                <rect key="frame" x="164" y="410" width="86" height="30"/>
+                                <rect key="frame" x="164" y="148" width="86" height="30"/>
                                 <state key="normal" title="Fixed Height"/>
                                 <connections>
                                     <action selector="showFixedBottomSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1vV-gC-jPW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcB-r7-l1S">
-                                <rect key="frame" x="141" y="320" width="132" height="30"/>
+                                <rect key="frame" x="141" y="248" width="132" height="30"/>
                                 <state key="normal" title="Changeable Height"/>
                                 <connections>
                                     <action selector="showChangeableBottomSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P40-Jw-NQJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOE-ni-02g">
+                                <rect key="frame" x="152" y="298" width="110" height="30"/>
+                                <state key="normal" title="With Table View"/>
+                                <connections>
+                                    <action selector="showTableViewBottomSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sxe-5q-HiU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ce4-GL-j40" firstAttribute="top" secondItem="zcB-r7-l1S" secondAttribute="bottom" constant="60" id="2eq-RW-cOK"/>
-                            <constraint firstItem="X24-NV-Oqb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="50" id="Nuu-Ug-Kuf"/>
-                            <constraint firstItem="ce4-GL-j40" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d9c-V5-yeh"/>
-                            <constraint firstItem="X24-NV-Oqb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dXO-Ab-P09"/>
-                            <constraint firstItem="ce4-GL-j40" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="fkG-mt-Kqd"/>
-                            <constraint firstItem="zcB-r7-l1S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o01-fo-W4g"/>
+                            <constraint firstItem="gOE-ni-02g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3hw-Gj-mJv"/>
+                            <constraint firstItem="ce4-GL-j40" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="L9J-dE-6AH"/>
+                            <constraint firstItem="gOE-ni-02g" firstAttribute="top" secondItem="zcB-r7-l1S" secondAttribute="bottom" constant="20" id="Var-Xx-oCk"/>
+                            <constraint firstItem="zcB-r7-l1S" firstAttribute="top" secondItem="X24-NV-Oqb" secondAttribute="bottom" constant="20" id="cER-1T-MKq"/>
+                            <constraint firstItem="ce4-GL-j40" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gYu-Tw-b6j"/>
+                            <constraint firstItem="X24-NV-Oqb" firstAttribute="top" secondItem="ce4-GL-j40" secondAttribute="bottom" constant="20" id="lSW-bJ-k6e"/>
+                            <constraint firstItem="X24-NV-Oqb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sB7-Po-Suj"/>
+                            <constraint firstItem="zcB-r7-l1S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zkj-cU-cic"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3Rm-pH-smr"/>
@@ -70,7 +79,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flexible Bottom Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-f4-TXs">
                                         <rect key="frame" x="124" y="100" width="166.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inw-tb-Js7">
@@ -85,24 +94,13 @@
                                             <action selector="closeBottomSheet:" destination="vz8-Kv-17a" eventType="touchUpInside" id="t2s-P9-b2H"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-CJ-Zpn">
-                                        <rect key="frame" x="135" y="181" width="144" height="30"/>
-                                        <state key="normal" title="Navigation Push Test">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="navigationPush:" destination="vz8-Kv-17a" eventType="touchUpInside" id="56Q-L6-MB8"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstItem="Inw-tb-Js7" firstAttribute="top" secondItem="zf7-mA-NCT" secondAttribute="top" constant="20" id="1qp-6Q-aRo"/>
                                     <constraint firstItem="cg1-f4-TXs" firstAttribute="top" secondItem="zf7-mA-NCT" secondAttribute="top" constant="100" id="T82-yk-Vep"/>
-                                    <constraint firstItem="wfz-CJ-Zpn" firstAttribute="top" secondItem="cg1-f4-TXs" secondAttribute="bottom" constant="60" id="a0W-9j-37L"/>
                                     <constraint firstAttribute="bottom" secondItem="cg1-f4-TXs" secondAttribute="bottom" constant="200" id="bU2-0T-Any"/>
                                     <constraint firstItem="cg1-f4-TXs" firstAttribute="centerX" secondItem="zf7-mA-NCT" secondAttribute="centerX" id="dnf-T5-r4V"/>
-                                    <constraint firstItem="wfz-CJ-Zpn" firstAttribute="centerX" secondItem="zf7-mA-NCT" secondAttribute="centerX" id="mY3-dy-u6Y"/>
                                     <constraint firstAttribute="trailing" secondItem="Inw-tb-Js7" secondAttribute="trailing" constant="20" id="qI7-SA-plO"/>
                                 </constraints>
                             </view>
@@ -133,12 +131,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1MS-0Z-cmH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table View Bottom Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-wF-T5m">
                                 <rect key="frame" x="111.5" y="144" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="czs-re-YBg" customClass="BottomSheetTableView" customModule="Demo" customModuleProvider="target">
@@ -222,8 +220,8 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -12,9 +12,9 @@ import JHBottomSheet
 class ViewController: UIViewController {
 	@IBAction func showFixedBottomSheet(_ sender: Any) {
 		let vc = UIViewController()
-		vc.view.backgroundColor = .red
+		vc.view.backgroundColor = .orange
 		let bottomSheet = BottomSheet.init(childViewController: vc, height: 300)
-		present(bottomSheet, animated: true, completion: nil)	// BottomSheet을 그냥 view controller present 하듯 사용하는 방법 찾기..! animated를 true로 주면 이상함...
+		present(bottomSheet, animated: true, completion: nil)
 	}
 
 	@IBAction func showFlexibleBottomSheet(_ sender: Any) {
@@ -31,6 +31,10 @@ class ViewController: UIViewController {
 		let bottomSheet = BottomSheet.init(childViewController: vc, initialHeight: 300, maxHeight: 600)
 		present(bottomSheet, animated: true, completion: nil)
 	}
+
+	@IBAction func showTableViewBottomSheet(_ sender: Any) {
+	}
+
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
