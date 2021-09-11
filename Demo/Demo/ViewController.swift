@@ -11,15 +11,15 @@ import JHBottomSheet
 
 class ViewController: UIViewController {
 	@IBAction func showFixedBottomSheet(_ sender: Any) {
-		let vc = UIViewController()
-		vc.view.backgroundColor = .orange
-		let bottomSheet = BottomSheet.init(childViewController: vc, height: 300)
+		let storyBoard: UIStoryboard! = UIStoryboard(name: "Main", bundle: nil)
+		let vc = storyBoard.instantiateViewController(withIdentifier: "Fixed") as! FixedSampleViewController
+		let bottomSheet = BottomSheet.init(childViewController: vc, height: 600)
 		present(bottomSheet, animated: true, completion: nil)
 	}
 
 	@IBAction func showFlexibleBottomSheet(_ sender: Any) {
 		let storyBoard: UIStoryboard! = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyBoard.instantiateViewController(withIdentifier: "FlexibleSheet") as! FlexibleSampleViewController
+		let vc = storyBoard.instantiateViewController(withIdentifier: "Flexible") as! FlexibleSampleViewController
 		let bottomSheet = BottomSheet.init(childViewController: vc, addBottomSafeAreaInset: false)
 		bottomSheet.delegate = self
 		present(bottomSheet, animated: true, completion: nil)
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
 
 	@IBAction func showTableViewBottomSheet(_ sender: Any) {
 		let storyBoard: UIStoryboard! = UIStoryboard(name: "Main", bundle: nil)
-		let vc = storyBoard.instantiateViewController(withIdentifier: "TableViewSheet") as! TableViewSampleViewController
+		let vc = storyBoard.instantiateViewController(withIdentifier: "TableView") as! TableViewSampleViewController
 		let bottomSheet = BottomSheet.init(childViewController: vc, height: 500)
 		present(bottomSheet, animated: true, completion: nil)
 	}

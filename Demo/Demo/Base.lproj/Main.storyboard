@@ -68,7 +68,7 @@
         <!--Flexible Sample View Controller-->
         <scene sceneID="Khh-KU-xBj">
             <objects>
-                <viewController storyboardIdentifier="FlexibleSheet" id="vz8-Kv-17a" customClass="FlexibleSampleViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Flexible" id="vz8-Kv-17a" customClass="FlexibleSampleViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gps-yX-W92">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
         <!--Table View Sample View Controller-->
         <scene sceneID="izV-15-Acx">
             <objects>
-                <viewController storyboardIdentifier="TableViewSheet" id="VuL-Ns-I4P" customClass="TableViewSampleViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TableView" id="VuL-Ns-I4P" customClass="TableViewSampleViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CAe-B3-3zZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLU-KB-9QY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2513.04347826087" y="138.61607142857142"/>
+        </scene>
+        <!--Fixed Sample View Controller-->
+        <scene sceneID="c42-qt-85U">
+            <objects>
+                <viewController storyboardIdentifier="Fixed" id="1Xw-Gi-s1o" customClass="FixedSampleViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r7j-Sf-E1l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixed Bottom Sheet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjh-kc-Ncc">
+                                <rect key="frame" x="132.5" y="104" width="149.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AyQ-hj-GDc">
+                                <rect key="frame" x="187" y="54" width="40" height="4"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="EdP-a9-yfc"/>
+                                    <constraint firstAttribute="width" constant="40" id="wK1-ao-Zrm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dng-wh-4vC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jjh-kc-Ncc" firstAttribute="centerX" secondItem="Dng-wh-4vC" secondAttribute="centerX" id="3cX-aC-vEQ"/>
+                            <constraint firstItem="AyQ-hj-GDc" firstAttribute="centerX" secondItem="Dng-wh-4vC" secondAttribute="centerX" id="Fhq-MC-dKt"/>
+                            <constraint firstItem="AyQ-hj-GDc" firstAttribute="top" secondItem="Dng-wh-4vC" secondAttribute="top" constant="10" id="gOV-XD-oFT"/>
+                            <constraint firstItem="Jjh-kc-Ncc" firstAttribute="top" secondItem="Dng-wh-4vC" secondAttribute="top" constant="60" id="w2v-UV-Gk0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barView" destination="AyQ-hj-GDc" id="Zkv-Dv-bbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdY-lC-ENY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3240.579710144928" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BVn-8c-6xO">

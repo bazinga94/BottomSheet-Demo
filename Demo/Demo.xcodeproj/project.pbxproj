@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		43702257265557600050EC77 /* FlexibleSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43702256265557600050EC77 /* FlexibleSampleViewController.swift */; };
 		4370225A2655577E0050EC77 /* TableViewSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437022592655577E0050EC77 /* TableViewSampleViewController.swift */; };
+		4382E0BE26ECD2B800E5D4F1 /* FixedSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382E0BD26ECD2B800E5D4F1 /* FixedSampleViewController.swift */; };
 		B25B7E1625F0ADDE00BA31C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B7E1525F0ADDE00BA31C1 /* AppDelegate.swift */; };
 		B25B7E1A25F0ADDE00BA31C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B7E1925F0ADDE00BA31C1 /* ViewController.swift */; };
 		B25B7E1D25F0ADDE00BA31C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25B7E1B25F0ADDE00BA31C1 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		238B2795017CB44142B06943 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43702256265557600050EC77 /* FlexibleSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleSampleViewController.swift; sourceTree = "<group>"; };
 		437022592655577E0050EC77 /* TableViewSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSampleViewController.swift; sourceTree = "<group>"; };
+		4382E0BD26ECD2B800E5D4F1 /* FixedSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSampleViewController.swift; sourceTree = "<group>"; };
 		B25B7E1225F0ADDE00BA31C1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25B7E1525F0ADDE00BA31C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25B7E1925F0ADDE00BA31C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				B25B7E1525F0ADDE00BA31C1 /* AppDelegate.swift */,
 				B25B7E1925F0ADDE00BA31C1 /* ViewController.swift */,
+				4382E0BD26ECD2B800E5D4F1 /* FixedSampleViewController.swift */,
 				43702256265557600050EC77 /* FlexibleSampleViewController.swift */,
 				437022592655577E0050EC77 /* TableViewSampleViewController.swift */,
 				B278BFD8265381E000F79CFD /* SampleTableViewCell.swift */,
@@ -94,7 +97,6 @@
 				1AFC781CC9C310AE73B44840 /* Pods-Demo.debug.xcconfig */,
 				D6EC90F576A2BC13E857B52A /* Pods-Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -218,6 +220,7 @@
 				4370225A2655577E0050EC77 /* TableViewSampleViewController.swift in Sources */,
 				B278BFD9265381E000F79CFD /* SampleTableViewCell.swift in Sources */,
 				B25B7E1625F0ADDE00BA31C1 /* AppDelegate.swift in Sources */,
+				4382E0BE26ECD2B800E5D4F1 /* FixedSampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
